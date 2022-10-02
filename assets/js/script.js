@@ -10,6 +10,12 @@ const winningMessageTextElement = document.querySelector(
 );
 const winningMessage = document.querySelector("[data-winning-message]");
 
+// 2p button
+const twoPlayersButton = document.querySelector("[data-twoplayers-button]");
+
+// cpu button
+const cpuButton = document.querySelector("[data-cpu-button]");
+
 // restart button
 const restartButton = document.querySelector("[data-restart-button]");
 
@@ -42,6 +48,22 @@ const startGame = () => {
   setBoardHoverClass();
   winningMessage.classList.remove("show-winning-message");
 };
+
+// against CPU
+const vsCpu = (startGame) => {
+  const cells = Array.from(document.getElementsByTagName('li'));
+  const emptyCells = [];
+
+  cells.forEach((cell) => {
+  if (cell.textContent == '') { // return 'X' ou 'O' inside cells
+    emptyCells.push(cell); // if empty = `emptyCells`
+  }
+});
+  // random number between 0 and 8
+  const random = Math.ceil(Math.random() * emptyCells.length) - 1;
+
+  emptyCells[random].textContent = '.cellcircle'; // put and O in cell when cpu plays
+}
 
 // end game and restart button
 const endGame = (isDraw) => {
@@ -119,5 +141,9 @@ const handleClick = (e) => {
 };
 
 startGame();
+
+twoPlayersButton.addEventListener("click", startGame);
+
+cpuButton.addEventListener("click", vsCpu);
 
 restartButton.addEventListener("click", startGame);

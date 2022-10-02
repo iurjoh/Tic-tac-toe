@@ -3,6 +3,7 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  font-family: 'Dosis', sans-serif;
 }
 
 /* styling my body content*/
@@ -14,6 +15,36 @@ body {
     rgb(8, 162, 189, 1) 0%,
     rgb(191, 14, 197, 1) 100%
   );
+}
+
+/* menu styles */
+.menu {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.8);
+  flex-direction: column;
+}
+
+h1 {
+  color: white;
+  font-size: 2.2 rem;
+}
+
+.menu-button {
+  font-size: 1.5rem;
+  background-color: rgb(8, 162, 189, 1);
+  padding: 10px 15px;
+  cursor: pointer;
+  border-radius: 5px;
+  border: none;
+  margin-top: 16px;
+  color: white;
 }
 
 /* creating a board to the game */
@@ -141,11 +172,13 @@ body {
   color: white;
 }
 
-.restart-button:hover {
+.restart-button:hover,
+.menu-button:hover {
   color: rgb(8, 162, 189, 1);
   background-color: white;
 }
 
+/* end game message */
 .winning-text {
   color: white;
   font-size: 5rem;

@@ -17,10 +17,11 @@
   </head>
 
   <body>
-    <div class="menu"></div>
-        <h1>Tic-Tac-Toe</h1>
+    <div class="menu">
+      <h1>Tic-Tac-Toe</h1>
         <button id= "2p" class="menu-button" data-twoplayers-button>2 Players</button>
         <button id="cpu" class="menu-button" data-cpu-button>Vs. CPU</button>
+    </div>
 
     <div class="board" data-board>
       <div class="cell" data-cell></div>
@@ -32,6 +33,11 @@
       <div class="cell" data-cell></div>
       <div class="cell" data-cell></div>
       <div class="cell" data-cell></div>
+    </div>
+
+    <div class="score-area">
+      <p class="scores">X Win<span id="x-score">0</span></p>
+      <p class="scores">O Win<span id="o-score">0</span></p>
     </div>
 
     <div class="winning-message" data-winning-message>

@@ -59,6 +59,7 @@ const vsCpu = (startGame) => {
     emptyCells.push(cell); // if empty = `emptyCells`
   }
 });
+
   // random number between 0 and 8
   const random = Math.ceil(Math.random() * emptyCells.length) - 1;
 
@@ -147,3 +148,20 @@ twoPlayersButton.addEventListener("click", startGame);
 cpuButton.addEventListener("click", vsCpu);
 
 restartButton.addEventListener("click", startGame);
+
+// Score area
+incrementXScore();
+incrementCircleScore();
+
+function incrementXScore() {
+
+  let oldScore = parseInt(document.getElementById("x-score").innerText);
+  document.getElementById("x-score").innerText = ++oldScore;
+}
+
+function incrementOScore() {
+
+  let oldScore = parseInt(document.getElementById("circle-score").innerText);
+  document.getElementById("circle-score").innerText = ++oldScore;
+  
+}

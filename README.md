@@ -55,14 +55,63 @@ This game is designed to test JavaScript and DOM basic skills acquired in the Co
 - Add a game mode that saves wins in record time.
 
 # Tests
-## Html verification
+    To check for any possible bugs, tests were carried out in HTML, CSS and JavaScript using the following respective validators:
+    - W3C HTML Validator
+    - W3C CSS Validator (Jigsaw)
+    - JSHint JavaScript Validator
+
+## Html results
 
 
 
-## CSS verification
+## CSS results
 
 
 
-## JavaScript verification
+## JavaScript results
 
 
+
+## Unfixed bugs
+
+
+
+## Fixed bugs
+
+
+
+# Languages Used
+- [HTML5](https://en.wikipedia.org/wiki/HTML5)
+- [CSS3](https://en.wikipedia.org/wiki/CSS)
+- [JavaScript](https://en.wikipedia.org/wiki/JavaScript)
+
+# Deployment
+This game was deploy through the GitHub repository. The steps are as follows:
+- In the GitHub repository, click on Settings tab;
+- Navigate to the menu on the left side and select Pages;
+- Set the source in the Build and deployment item as "Deploy from a branch". Then, in the Branch item, the Main option was chosen, /(root) folder and finishing the settings with the Save button.
+
+The link to the deployed website is: OOOOOOOOOOOOOOOOOOOOOOOOOO
+
+# Credits
+Here will be the sites that helped me find everything I needed to develop my work, including research and material sources.
+
+## Content
+
+Sites such as:
+- [Stack Overflow](https://stackoverflow.co/) were used at various times to clear up recurring doubts,
+- [Google Fonts](https://fonts.google.com/) to insert new fonts;
+- [CSS Tricks](https://css-tricks.com/) to answer CSS questions;
+- [Code Institute](https://learn.codeinstitute.net/) to review material of study explanatory videos and guides on how to set up a complete website;
+- [GitHub](https://github.com/) to better understand other projects;
+- [Google](https://www.google.com) for more information on subjects related to the that I had to study during the creation of the site;
+- [W3C](https://www.w3.org/) to read the tutorials and understand basic rules of HTML, CSS and JavaScript;
+- [Youtube](https://www.youtube.com/) tutorials to learn using in a practical way some of the methods necessary to implement the desired functions for the game;
+- [Slack](https://slack.com/) communities to ask questions and access answers to questions that I found in the development of the site.
+
+## Media
+
+- [Techsini](https://techsini.com/multi-mockup/index.php) Multi Device Website Mockup Generator was used to generate the image used in this README.md in the opening section.
+
+## Acknowledgements
+- My mentor for continuous helpful feedback.

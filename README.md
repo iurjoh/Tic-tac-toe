@@ -18,6 +18,8 @@ A title with a clean design to introduce users to the game.
 
 A brief description of how to play this classic game.
 
+![Instructions](./assets/images/instructions.JPG)
+
 ### Board
 
 In this area the game itself develops. A grid composed of 9 cells arranged in a 3x3 matrix responsive to the user's click, marking one cell at a time with the icon of the player who is active on the turn.
@@ -26,7 +28,7 @@ In this area the game itself develops. A grid composed of 9 cells arranged in a 
 
 ### Cells
 
-After the move, the icon will change so that the next player/computer also makes his move. Each cell can only be clicked once and when the pointer passes over an already filled cell a prohibited sign will appear to indicate to the player that this cell is not available for a possible move.
+After the move, the icon will change so that the next player also makes his move. Each cell can only be clicked once and when the pointer passes over an already filled cell a prohibited sign will appear to indicate to the player that this cell is not available for a possible move.
 
 ![Cells](./assets/images/cells.jpg)
 
@@ -54,7 +56,8 @@ Whenever all cells are filled without any player achieving a win condition, the 
 
 A message will be presented on the screen to the user containing one of the two options, be it a win or a draw. After this message is displayed, the user can choose to restart a new game by clicking on the restart button.
 
-![End Game Messages](./assets/images/end-game-message.jpg)
+![Victory](./assets/images/end-game-message.jpg)
+![Draw](./assets/images/draw.JPG)
 
 ### Restart Button
 

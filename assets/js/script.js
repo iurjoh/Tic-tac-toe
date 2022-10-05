@@ -178,12 +178,12 @@ restartButton.addEventListener("click", () => startGame());
 incrementXScore();
 //incrementCircleScore();
 
-function incrementXScore() {
-  let oldScore = parseInt(document.getElementById("x-score").innerText);
-  document.getElementById("x-score").innerText = ++oldScore;
-}
+// function incrementXScore() {
+//   let oldScore = parseInt(document.getElementById("x-score").innerText);
+//   document.getElementById("x-score").innerText = ++oldScore;
+// }
 
-function incrementOScore() {
-  let oldScore = parseInt(document.getElementById("circle-score").innerText);
-  document.getElementById("circle-score").innerText = ++oldScore;
-}
+// function incrementOScore() {
+//   let oldScore = parseInt(document.getElementById("circle-score").innerText);
+//   document.getElementById("circle-score").innerText = ++oldScore;
+// }

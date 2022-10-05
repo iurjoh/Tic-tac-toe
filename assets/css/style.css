@@ -18,8 +18,7 @@ body {
 }
 
 /*menu styles */
-
- .menu {
+.menu {
   display: flex;
   position: fixed;
   top: 0;
@@ -60,8 +59,6 @@ h1 {
   right: 0;
   bottom: 0;
 }
-
-
 
 /* creating a board to the game */
 .board {

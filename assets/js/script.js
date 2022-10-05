@@ -130,7 +130,7 @@ const swapTurns = () => {
 
 const handleClick = (e) => {
 
-  console.log('~playiong...', e)
+  console.log('~playing...', e)
 
   const cells = Array.from(document.getElementsByClassName("cell"));
   //console.log(cells, "<==cells")
@@ -175,7 +175,7 @@ startGame();
 restartButton.addEventListener("click", () => startGame());
 
 // Score area
-incrementXScore();
+// incrementXScore();
 //incrementCircleScore();
 
 // function incrementXScore() {

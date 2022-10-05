@@ -62,7 +62,7 @@ At the end of each game, on the screen that shows the end game message, the play
 
 ![Restart Button](./assets/images/restart-button.jpg)
 
-## Features to increment
+## Features to Increment
 - Add a vs. CPU mode to play against the computer.
 - Add more competitiveness to the game with an accumulative score display that will be updated at each end of the match.
 - Add a mode with a countdown timer for each player's move, where if the time runs out, the player will lose his turn or have his move made by the computer.
@@ -70,30 +70,38 @@ At the end of each game, on the screen that shows the end game message, the play
 - Add a game mode that saves wins in record time.
 
 # Tests
-To check for any possible bugs, tests were carried out in HTML, CSS and JavaScript using the following respective validators:
+To check for any possible bugs, code errors, warnings, performance, accessibility, best pratices and SEO, many tests were carried out in HTML, CSS and JavaScript using the following respective validators:
 - W3C HTML Validator
 - W3C CSS Validator (Jigsaw)
 - JSHint JavaScript Validator
+- Lighthouse validation test
 
-## Html results
+## HTML Results
 
+The HTML was successful in the validation test as shown in the image below.
 
+![HTML Results](./assets/images/html%20validation.JPG)
 
-## CSS results
+## CSS Results
 
+The CSS was successful in the validation test as shown in the image below.
 
+![CSS Results](./assets/images/w3c%20css%20validation.JPG)
 
-## JavaScript results
+## JavaScript Results
 
+The JavaScript was successful in the validation test as shown in the image below.
 
+![JavaScript Results](./assets/images/js%20validation.JPG)
 
-## Unfixed bugs
+## Lighthouse Results
 
+The Lighthouse was successful in the validation test as shown in the image below.
 
+![Lighthouse Results](./assets/images/lighthouse.JPG)
 
-## Fixed bugs
-- Fixed hover function to switch between icons every new turn.
-
+## Fixed Bugs
+- Fixed hover function when switching between icons between turns.
 
 # Languages Used
 - [HTML5](https://en.wikipedia.org/wiki/HTML5)
@@ -106,7 +114,7 @@ This game was deploy through the GitHub repository. The steps are as follows:
 - Navigate to the menu on the left side and select Pages;
 - Set the source in the Build and deployment item as "Deploy from a branch". Then, in the Branch item, the Main option was chosen, /(root) folder and finishing the settings with the Save button.
 
-The link to the deployed website is: OOOOOOOOOOOOOOOOOOOOOOOOOO
+The link to the deployed website is: https://iurjoh.github.io/Tic-tac-toe/
 
 # Credits
 Here will be the sites that helped me find everything I needed to develop my work, including research and material sources.

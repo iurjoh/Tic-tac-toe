@@ -16,10 +16,6 @@ const restartButton = document.querySelector("[data-restart-button]");
 // disable and insert in "startGame const"
 let isCircleTurn;
 
-window.addEventListener("load", () => {
-  const menu = document.querySelector(".menu");
-});
-
 // winning combinations
 const winningCombinations = [
   [0, 1, 2],
@@ -125,17 +121,3 @@ const handleClick = (e) => {
 startGame();
 
 restartButton.addEventListener("click", startGame);
-
-// Score area
-// incrementXScore();
-//incrementCircleScore();
-
-// function incrementXScore() {
-//   let oldScore = parseInt(document.getElementById("x-score").innerText);
-//   document.getElementById("x-score").innerText = ++oldScore;
-// }
-
-// function incrementOScore() {
-//   let oldScore = parseInt(document.getElementById("circle-score").innerText);
-//   document.getElementById("circle-score").innerText = ++oldScore;
-// }

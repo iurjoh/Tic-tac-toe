@@ -1,4 +1,4 @@
-# Tic-tac-toa game
+# Tic-tac-toe game
 
 This game is designed to test JavaScript and DOM basic skills acquired in the Code Institute's Full Stack developer course. The classic Tic-tac-toe was chosen, built in a simple and minimalist design, to be played online between two players or against the computer.
 
@@ -6,47 +6,47 @@ This game is designed to test JavaScript and DOM basic skills acquired in the Co
 ## Existing Features
 ### Select Mode Interface
 
-    An interface with two buttons available, each one referring to a version of the game, either against another player or against the computer. Depending on the user's choice a game mode will be activated and then the game will start.
+An interface with two buttons available, each one referring to a version of the game, either against another player or against the computer. Depending on the user's choice a game mode will be activated and then the game will start.
 
 - #### 2 Players Mode
     
-    In this mode two players face each other, alternating their moves until someone wins or the game ends in a tie.
+In this mode two players face each other, alternating their moves until someone wins or the game ends in a tie.
 
 - #### Vs. CPU Mode
 
-    In this other mode, a player challenges the computer's skills by making his moves and then watching the machine's movements (randomly), until at the end one of the two wins or the game ends in a tie.
+In this other mode, a player challenges the computer's skills by making his moves and then watching the machine's movements (randomly), until at the end one of the two wins or the game ends in a tie.
 
 ### Board
 
-    In this area the game itself develops. A grid composed of 9 cells arranged in a 3x3 matrix responsive to the user's click, marking one cell at a time with the icon of the player who is active on the turn. 
+In this area the game itself develops. A grid composed of 9 cells arranged in a 3x3 matrix responsive to the user's click, marking one cell at a time with the icon of the player who is active on the turn. 
     
 ### Cells
 
-    After the move, the icon will change so that the next player/computer also makes his move. Each cell can only be clicked once and when the pointer passes over an already filled cell a prohibited sign will appear to indicate to the player that this cell is not available for a possible move.
+After the move, the icon will change so that the next player/computer also makes his move. Each cell can only be clicked once and when the pointer passes over an already filled cell a prohibited sign will appear to indicate to the player that this cell is not available for a possible move.
 
 ### Hover Function
 
-    A hover has also been added to indicate to the current player which icon will be used to fill the cell for that turn. An image of the icon will appear over the cells available to the user whenever the pointer is moved over a cell that meets this criterion.
+A hover has also been added to indicate to the current player which icon will be used to fill the cell for that turn. An image of the icon will appear over the cells available to the user whenever the pointer is moved over a cell that meets this criterion.
 
 ### End Game Rules
 
-    The game will end when one of the players manages to complete a complete row, column or diagonal or when all the cells are filled without one of the players achieving this victory condition, which will cause a tie.
+The game will end when one of the players manages to complete a complete row, column or diagonal or when all the cells are filled without one of the players achieving this victory condition, which will cause a tie.
 
 - #### Conditions of a Victory
 
-    A string containing all possible combinations for the winning conditions was written and is used each turn to check if one of the players, either human or the computer, has managed to fulfill some of the 8 possible combinations that guarantee victory.
+A string containing all possible combinations for the winning conditions was written and is used each turn to check if one of the players, either human or the computer, has managed to fulfill some of the 8 possible combinations that guarantee victory.
 
 - #### Conditions of a Draw
 
-    Whenever all cells are filled without any player achieving a win condition, the game will end in a tie.
+Whenever all cells are filled without any player achieving a win condition, the game will end in a tie.
 
 ### End Game Messages
 
-    A message will be presented on the screen to the user containing one of the two options, be it a win or a draw. After this message is displayed, the user can choose to restart a new game by clicking on the restart button.
+A message will be presented on the screen to the user containing one of the two options, be it a win or a draw. After this message is displayed, the user can choose to restart a new game by clicking on the restart button.
 
 ### Restart Button
 
-    At the end of each game, on the screen that shows the end game message, the player will be presented with a restart button that will reset the board, erasing all the icons that filled the cells, restarting the tie and victory conditions in a brand new match using the game mode the player had chosen for the previous match.
+At the end of each game, on the screen that shows the end game message, the player will be presented with a restart button that will reset the board, erasing all the icons that filled the cells, restarting the tie and victory conditions in a brand new match using the game mode the player had chosen for the previous match.
 
 ## Features to increment
 - Add more competitiveness to the game with an accumulative score display that will be updated at each end of the match.
@@ -55,10 +55,10 @@ This game is designed to test JavaScript and DOM basic skills acquired in the Co
 - Add a game mode that saves wins in record time.
 
 # Tests
-    To check for any possible bugs, tests were carried out in HTML, CSS and JavaScript using the following respective validators:
-    - W3C HTML Validator
-    - W3C CSS Validator (Jigsaw)
-    - JSHint JavaScript Validator
+To check for any possible bugs, tests were carried out in HTML, CSS and JavaScript using the following respective validators:
+- W3C HTML Validator
+- W3C CSS Validator (Jigsaw)
+- JSHint JavaScript Validator
 
 ## Html results
 

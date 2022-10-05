@@ -1,23 +1,20 @@
-# Tic-tac-toe game
+# Tic-Tac-Toe game
 
-This game is designed to test JavaScript and DOM basic skills acquired in the Code Institute's Full Stack developer course. The classic Tic-tac-toe was chosen, built in a simple and minimalist design, to be played online between two players or against the computer.
+This game is designed to test JavaScript and DOM basic skills acquired in the Code Institute's Full Stack developer course. The classic Tic-tac-toe was chosen, built in a simple and minimalist design, to be played online between two players.
 
+![Tic-Tac-Toe](./assets/images/mockup.JPG)
 
 # Features
 ## Existing Features
-### Select Mode Interface
+### Title
 
-An interface with two buttons available, each one referring to a version of the game, either against another player or against the computer. Depending on the user's choice a game mode will be activated and then the game will start.
+A title with a clean design to introduce users to the game.
 
-![Select Mode Interface](./assets/images/select-mode-interface.JPG)
+![Title](./assets/images/title.JPG)
 
-- #### 2 Players Mode
-    
-In this mode two players face each other, alternating their moves until someone wins or the game ends in a tie.
+### Instructions
 
-- #### Vs. CPU Mode
-
-In this other mode, a player challenges the computer's skills by making his moves and then watching the machine's movements (randomly), until at the end one of the two wins or the game ends in a tie.
+A brief description of how to play this classic game.
 
 ### Board
 
@@ -45,7 +42,7 @@ The game will end when one of the players manages to complete a complete row, co
 
 - #### Conditions of a Victory
 
-A string containing all possible combinations for the winning conditions was written and is used each turn to check if one of the players, either human or the computer, has managed to fulfill some of the 8 possible combinations that guarantee victory.
+A string containing all possible combinations for the winning conditions was written and is used each turn to check if one of the players has managed to fulfill some of the 8 possible combinations that guarantee victory.
 
 - #### Conditions of a Draw
 
@@ -59,11 +56,12 @@ A message will be presented on the screen to the user containing one of the two 
 
 ### Restart Button
 
-At the end of each game, on the screen that shows the end game message, the player will be presented with a restart button that will reset the board, erasing all the icons that filled the cells, restarting the tie and victory conditions in a brand new match using the game mode the player had chosen for the previous match.
+At the end of each game, on the screen that shows the end game message, the player will be presented with a restart button that will reset the board, erasing all the icons that filled the cells, restarting the tie and victory conditions in a brand new match.
 
 ![Restart Button](./assets/images/restart-button.jpg)
 
 ## Features to increment
+- Add a vs. CPU mode to play against the computer.
 - Add more competitiveness to the game with an accumulative score display that will be updated at each end of the match.
 - Add a mode with a countdown timer for each player's move, where if the time runs out, the player will lose his turn or have his move made by the computer.
 - Add a stopwatch to show the elapsed time in each match.
@@ -93,8 +91,6 @@ To check for any possible bugs, tests were carried out in HTML, CSS and JavaScri
 
 ## Fixed bugs
 - Fixed hover function to switch between icons every new turn.
-- Fixed the function that activates the CPU's automatic random moves in vs. CPU mode.
-- Fixed endgame message in vs. CPU that only showed as a player wins (X icon) and never CPU (O icon).
 
 
 # Languages Used

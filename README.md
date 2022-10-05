@@ -2,7 +2,6 @@
 
 This game is designed to test JavaScript and DOM basic skills acquired in the Code Institute's Full Stack developer course. The classic Tic-tac-toe was chosen, built in a simple and minimalist design, to be played online between two players or against the computer.
 
-![Tic-tac-toe game](./assets/images/tic-tac-toe-mockup.JPG)
 
 # Features
 ## Existing Features

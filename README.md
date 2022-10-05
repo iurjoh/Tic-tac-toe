@@ -1,5 +1,7 @@
 # Tic-Tac-Toe game
 
+Play the game [here](https://iurjoh.github.io/Tic-tac-toe/)
+
 This game is designed to test JavaScript and DOM basic skills acquired in the Code Institute's Full Stack developer course. The classic Tic-tac-toe was chosen, built in a simple and minimalist design, to be played online between two players.
 
 ![Tic-Tac-Toe](./assets/images/mockup.JPG)

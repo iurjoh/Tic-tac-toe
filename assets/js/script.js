@@ -10,12 +10,6 @@ const winningMessageTextElement = document.querySelector(
 );
 const winningMessage = document.querySelector("[data-winning-message]");
 
-// 2p button
-const twoPlayersButton = document.querySelector("[data-twoplayers-button]");
-
-// cpu button
-const cpuButton = document.querySelector("[data-cpu-button]");
-
 // restart button
 const restartButton = document.querySelector("[data-restart-button]");
 
@@ -24,7 +18,6 @@ let isCircleTurn;
 
 window.addEventListener("load", () => {
   const menu = document.querySelector(".menu");
-  //menu.style.display = 'flex'
 });
 
 // winning combinations
@@ -40,23 +33,19 @@ const winningCombinations = [
 ];
 
 // each cell clicked will be filled only once
-const startGame = (playing) => {
- 
-    isCircleTurn = false;
+const startGame = () => {
+  isCircleTurn = false;
 
-    for (const cell of cellElements) {
-      cell.classList.remove("circle");
-      cell.classList.remove("x");
-      cell.removeEventListener("click", handleClick);
-      cell.addEventListener("click", handleClick, { once: true });
-    }
+  for (const cell of cellElements) {
+    cell.classList.remove("circle");
+    cell.classList.remove("x");
+    cell.removeEventListener("click", handleClick);
+    cell.addEventListener("click", handleClick, { once: true });
+  }
 
-    setBoardHoverClass();
-    winningMessage.classList.remove("show-winning-message");
-  
+  setBoardHoverClass();
+  winningMessage.classList.remove("show-winning-message");
 };
-
-
 
 // end game and restart button
 const endGame = (isDraw) => {
@@ -105,50 +94,17 @@ const setBoardHoverClass = () => {
 
 // switch icons X and O between turns
 const swapTurns = () => {
- 
-  // const emptyCells = [];
-  // cells.forEach((cell) => {
-  // if (cell.textContent == "") {
-  //   // return 'X' ou 'O' inside cells
-  //   emptyCells.push(cell); // if empty = `emptyCells`
-  // }
-  // });
-
-  // random number between 0 and 8
- //const random = Math.floor(Math.random() * emptyCells.length) - 1;
- // emptyCells[random].textContent = ".cell.circle"; // put and O in cell when cpu plays
-
-
-
-
-
-
   isCircleTurn = !isCircleTurn;
 
   setBoardHoverClass();
 };
 
 const handleClick = (e) => {
-
-  console.log('~playing...', e)
-
-  const cells = Array.from(document.getElementsByClassName("cell"));
-  //console.log(cells, "<==cells")
-  
-   const data = cells.filter(cell => !cell.classList.contains("circle") &&  !cell.classList.contains("x"));
-  const random = data[Math.floor(Math.random() * data.length) - 1];
-   console.log(random, "<==data")
-
   // set X or O
   const cell = e.target;
   const classToAdd = isCircleTurn ? "circle" : "x";
- 
 
-
-  placeMark(cell, "x");
-  placeMark(random, "circle");
-  
-
+  placeMark(cell, classToAdd);
 
   // check if win
   const isWin = checkForWin(classToAdd);
@@ -168,11 +124,7 @@ const handleClick = (e) => {
 
 startGame();
 
-// twoPlayersButton.addEventListener("click", () => startGame());
-
-// cpuButton.addEventListener("click", () => startGame());
-
-restartButton.addEventListener("click", () => startGame());
+restartButton.addEventListener("click", startGame);
 
 // Score area
 // incrementXScore();

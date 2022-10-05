@@ -25,20 +25,27 @@ body {
   left: 0;
   right: 0;
   bottom: 0;
-  /* justify-content: center;
-  align-items: center;
-  background-color: rgba(0, 0, 0, 0.8); */
   flex-direction: column; 
 } 
 
 h1 {
   color: white;
-  position:relative;
-  align-items: center;
-  font-size: 2.2rem;
+  position: relative;
+  text-align: center;
+  font-size: 6rem;
 }
 
-.menu-button {
+h2 {
+  /* display: flex;
+  position: fixed; */
+  text-align: center;
+  color: white;
+  position: relative;
+  text-align: center;
+  font-size: 1rem;
+}
+
+/* .menu-button {
   display: inline-block;
   font-size: 1.5rem;
   background-color: rgb(8, 162, 189, 1);
@@ -48,17 +55,7 @@ h1 {
   border: none;
   margin-top: 16px;
   color: white;
-}
-
-/* score area */
-.score-area {
-  position: fixed;
-  color: white;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-}
+} */
 
 /* creating a board to the game */
 .board {

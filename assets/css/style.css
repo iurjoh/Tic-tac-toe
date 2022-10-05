@@ -35,7 +35,7 @@ h1 {
   color: white;
   position:relative;
   align-items: center;
-  font-size: 2.2 rem;
+  font-size: 2.2rem;
 }
 
 .menu-button {
@@ -53,7 +53,7 @@ h1 {
 /* score area */
 .score-area {
   position: fixed;
-  color: white
+  color: white;
   top: 0;
   left: 0;
   right: 0;

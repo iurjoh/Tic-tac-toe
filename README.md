@@ -7,6 +7,7 @@ This game is designed to test JavaScript and DOM basic skills acquired in the Co
 ### Select Mode Interface
 
 An interface with two buttons available, each one referring to a version of the game, either against another player or against the computer. Depending on the user's choice a game mode will be activated and then the game will start.
+
 ![Select Mode Interface](./assets/images/select-mode-interface.JPG)
 
 - #### 2 Players Mode
@@ -19,22 +20,26 @@ In this other mode, a player challenges the computer's skills by making his move
 
 ### Board
 
-In this area the game itself develops. A grid composed of 9 cells arranged in a 3x3 matrix responsive to the user's click, marking one cell at a time with the icon of the player who is active on the turn. 
+In this area the game itself develops. A grid composed of 9 cells arranged in a 3x3 matrix responsive to the user's click, marking one cell at a time with the icon of the player who is active on the turn.
+
 ![Board](./assets/images/board.jpg)
 
 ### Cells
 
 After the move, the icon will change so that the next player/computer also makes his move. Each cell can only be clicked once and when the pointer passes over an already filled cell a prohibited sign will appear to indicate to the player that this cell is not available for a possible move.
+
 ![Cells](./assets/images/cells.jpg)
 
 ### Hover Function
 
 A hover has also been added to indicate to the current player which icon will be used to fill the cell for that turn. An image of the icon will appear over the cells available to the user whenever the pointer is moved over a cell that meets this criterion.
+
 ![Hover Function](./assets/images/hover.jpg)
 
 ### End Game Rules
 
 The game will end when one of the players manages to complete a complete row, column or diagonal or when all the cells are filled without one of the players achieving this victory condition, which will cause a tie.
+
 ![End Game Rules](./assets/images/winning-conditions.jpg)
 
 - #### Conditions of a Victory
@@ -48,11 +53,13 @@ Whenever all cells are filled without any player achieving a win condition, the 
 ### End Game Messages
 
 A message will be presented on the screen to the user containing one of the two options, be it a win or a draw. After this message is displayed, the user can choose to restart a new game by clicking on the restart button.
+
 ![End Game Messages](./assets/images/end-game-message.jpg)
 
 ### Restart Button
 
 At the end of each game, on the screen that shows the end game message, the player will be presented with a restart button that will reset the board, erasing all the icons that filled the cells, restarting the tie and victory conditions in a brand new match using the game mode the player had chosen for the previous match.
+
 ![Restart Button](./assets/images/restart-button.jpg)
 
 ## Features to increment

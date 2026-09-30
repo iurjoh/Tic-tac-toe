@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Jogo da velha para duas pessoas no mesmo dispositivo, com teclado e nomes acessíveis.">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self'; font-src 'self'; connect-src 'self'; object-src 'none'; base-uri 'self'; form-action 'none'">
+  <link rel="icon" href="assets/images/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <title>Tic-Tac-Toe | Jogo da velha</title>
+</head>
+<body>
+  <header class="menu">
+    <h1>Tic-Tac-Toe</h1>
+    <p>Jogo da velha para duas pessoas no mesmo dispositivo.</p>
+  </header>
+  <main>
+    <p id="instructions" class="instructions">Complete uma linha, coluna ou diagonal. Use Tab e Shift+Tab para escolher uma casa e Enter ou Espaço para jogar.</p>
+    <p class="legend">X = cruz · O = anel · X começa</p>
+    <p class="status" data-status role="status" aria-live="polite" aria-atomic="true">Vez de X.</p>
+    <div class="board" data-board data-turn="X" data-game-over="false" role="group" aria-label="Tabuleiro de jogo da velha" aria-describedby="instructions">
+        <button type="button" class="cell" data-cell data-index="0" aria-label="Linha 1, coluna 1, vazia" aria-disabled="false"></button>
+        <button type="button" class="cell" data-cell data-index="1" aria-label="Linha 1, coluna 2, vazia" aria-disabled="false"></button>
+        <button type="button" class="cell" data-cell data-index="2" aria-label="Linha 1, coluna 3, vazia" aria-disabled="false"></button>
+        <button type="button" class="cell" data-cell data-index="3" aria-label="Linha 2, coluna 1, vazia" aria-disabled="false"></button>
+        <button type="button" class="cell" data-cell data-index="4" aria-label="Linha 2, coluna 2, vazia" aria-disabled="false"></button>
+        <button type="button" class="cell" data-cell data-index="5" aria-label="Linha 2, coluna 3, vazia" aria-disabled="false"></button>
+        <button type="button" class="cell" data-cell data-index="6" aria-label="Linha 3, coluna 1, vazia" aria-disabled="false"></button>
+        <button type="button" class="cell" data-cell data-index="7" aria-label="Linha 3, coluna 2, vazia" aria-disabled="false"></button>
+        <button type="button" class="cell" data-cell data-index="8" aria-label="Linha 3, coluna 3, vazia" aria-disabled="false"></button>
+    </div>
+    <section class="result-panel" data-result-panel aria-label="Resultado da partida" hidden>
+      <h2 class="result-text" data-result-text>Resultado</h2>
+      <p>Partida encerrada. O tabuleiro está disponível para consulta.</p>
+    </section>
+    <button type="button" class="action-button" data-restart>Reiniciar partida</button>
+    <noscript>Ative JavaScript para jogar.</noscript>
+  </main>
+  <dialog data-confirm aria-labelledby="confirm-title" aria-describedby="confirm-description">
+    <h2 id="confirm-title">Reiniciar partida?</h2>
+    <p id="confirm-description">As jogadas desta partida serão descartadas.</p>
+    <div class="dialog-actions">
+      <button type="button" class="action-button" data-cancel-restart>Continuar jogando</button>
+      <button type="button" class="action-button" data-confirm-restart>Sim, reiniciar</button>
+    </div>
+  </dialog>
+  <script type="module" src="assets/js/script.js"></script>
+</body>
+</html>

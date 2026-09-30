@@ -1,0 +1,118 @@
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  min-height: 100vh;
+  min-height: 100svh;
+  padding: clamp(.75rem, 3vw, 1.5rem);
+  background: linear-gradient(115deg, #086579, #701278);
+  color: #fff;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: .75rem;
+}
+.menu, main { width: 100%; max-width: 40rem; }
+h1 { margin: 0 0 .35rem; font-size: clamp(1.75rem, 7vw, 3rem); line-height: 1.1; }
+p { margin: 0; line-height: 1.45; }
+main { display: flex; flex-direction: column; align-items: center; gap: .65rem; }
+.instructions { max-width: 36rem; }
+.legend { font-size: .875rem; }
+.status { min-height: 2.9em; font-weight: 650; max-width: 36rem; }
+.board {
+  width: min(90vw, 300px, 100%);
+  aspect-ratio: 1;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-template-rows: repeat(3, minmax(0, 1fr));
+  flex: none;
+}
+button { font: inherit; }
+.cell {
+  position: relative;
+  min-width: 0;
+  min-height: 0;
+  padding: 0;
+  border: 0;
+  border-right: 2px solid white;
+  border-bottom: 2px solid white;
+  background: transparent;
+  color: #fff;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0;
+}
+.cell:nth-child(3n) { border-right: 0; }
+.cell:nth-child(n+7) { border-bottom: 0; }
+.cell[aria-disabled="true"] { cursor: not-allowed; }
+.cell.winner { background: #fff3; box-shadow: inset 0 0 0 4px #ffdf70; }
+button:focus-visible { outline: 3px solid #ffdf70; outline-offset: 4px; z-index: 1; }
+.cell:focus-visible { outline-offset: -6px; background: #ffffff12; }
+.cell.x::before, .cell.x::after {
+  content: "";
+  position: absolute;
+  width: 75%;
+  height: 10%;
+  background: currentColor;
+  border-radius: 2px;
+}
+.cell.x::before { transform: rotate(45deg); }
+.cell.x::after { transform: rotate(-45deg); }
+.cell.circle::before {
+  content: "";
+  position: absolute;
+  width: 72%;
+  aspect-ratio: 1;
+  border: 7px solid currentColor;
+  border-radius: 50%;
+  background: transparent;
+}
+/* Previews use the same proportions as marks. No preview on touch-only devices. */
+@media (hover: hover) {
+  .board[data-game-over="false"] .cell[aria-disabled="false"]:hover { color: #ffffff80; }
+  .board[data-turn="X"][data-game-over="false"] .cell[aria-disabled="false"]:hover::before,
+  .board[data-turn="X"][data-game-over="false"] .cell[aria-disabled="false"]:hover::after {
+    content: ""; position: absolute; width: 75%; height: 10%; background: currentColor; border-radius: 2px;
+  }
+  .board[data-turn="X"] .cell[aria-disabled="false"]:hover::before { transform: rotate(45deg); }
+  .board[data-turn="X"] .cell[aria-disabled="false"]:hover::after { transform: rotate(-45deg); }
+  .board[data-turn="O"][data-game-over="false"] .cell[aria-disabled="false"]:hover::before {
+    content: ""; position: absolute; width: 72%; aspect-ratio: 1; border: 7px solid currentColor; border-radius: 50%; background: transparent;
+  }
+}
+.action-button {
+  min-height: 44px;
+  padding: .6rem 1rem;
+  border: 2px solid white;
+  border-radius: .5rem;
+  background: #fff;
+  color: #442050;
+  font-weight: 650;
+  cursor: pointer;
+  max-width: 100%;
+}
+.action-button:hover { background: #ffefb0; }
+[hidden] { display: none !important; }
+.result-panel { width: 100%; }
+.result-text { font-size: clamp(1.5rem, 6vw, 2.5rem); margin: 0 0 .35rem; }
+dialog {
+  width: min(90vw, 26rem);
+  max-height: 90svh;
+  overflow: auto;
+  padding: 1.25rem;
+  border: 2px solid white;
+  border-radius: .75rem;
+  background: #442050;
+  color: white;
+}
+dialog::backdrop { background: #000b; }
+dialog h2 { margin: 0 0 .75rem; font-size: clamp(1.25rem, 5vw, 1.75rem); }
+.dialog-actions { display: flex; flex-wrap: wrap; justify-content: center; gap: .75rem; margin-top: 1rem; }
+@media (forced-colors: active) {
+  .cell.x::before, .cell.x::after { background: ButtonText; }
+  .cell.circle::before { border-color: ButtonText; }
+  .cell.winner { outline: 4px double Highlight; outline-offset: -4px; }
+}

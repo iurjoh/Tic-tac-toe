@@ -1,0 +1,115 @@
+{
+  "date": "2026-09-30",
+  "scope": "local HTTP, not published Pages",
+  "lighthouse": [
+    {
+      "file": "tictactoe-lighthouse-desktop-1.json",
+      "version": "13.5.0",
+      "fetchTime": "2026-09-30T18:18:51.356Z",
+      "url": "http://127.0.0.1:8125/",
+      "scores": {
+        "performance": 100,
+        "accessibility": 100,
+        "best-practices": 100,
+        "seo": 100
+      }
+    },
+    {
+      "file": "tictactoe-lighthouse-desktop-2.json",
+      "version": "13.5.0",
+      "fetchTime": "2026-09-30T18:18:57.414Z",
+      "url": "http://127.0.0.1:8125/",
+      "scores": {
+        "performance": 100,
+        "accessibility": 100,
+        "best-practices": 100,
+        "seo": 100
+      }
+    },
+    {
+      "file": "tictactoe-lighthouse-desktop-3.json",
+      "version": "13.5.0",
+      "fetchTime": "2026-09-30T18:19:03.505Z",
+      "url": "http://127.0.0.1:8125/",
+      "scores": {
+        "performance": 100,
+        "accessibility": 100,
+        "best-practices": 100,
+        "seo": 100
+      }
+    },
+    {
+      "file": "tictactoe-lighthouse-mobile-1.json",
+      "version": "13.5.0",
+      "fetchTime": "2026-09-30T18:18:33.006Z",
+      "url": "http://127.0.0.1:8125/",
+      "scores": {
+        "performance": 100,
+        "accessibility": 100,
+        "best-practices": 100,
+        "seo": 100
+      }
+    },
+    {
+      "file": "tictactoe-lighthouse-mobile-2.json",
+      "version": "13.5.0",
+      "fetchTime": "2026-09-30T18:18:39.364Z",
+      "url": "http://127.0.0.1:8125/",
+      "scores": {
+        "performance": 100,
+        "accessibility": 100,
+        "best-practices": 100,
+        "seo": 100
+      }
+    },
+    {
+      "file": "tictactoe-lighthouse-mobile-3.json",
+      "version": "13.5.0",
+      "fetchTime": "2026-09-30T18:18:45.394Z",
+      "url": "http://127.0.0.1:8125/",
+      "scores": {
+        "performance": 100,
+        "accessibility": 100,
+        "best-practices": 100,
+        "seo": 100
+      }
+    }
+  ],
+  "contrast": {
+    "white on #086579": 6.67113067741747,
+    "white on #701278": 10.260496374544147,
+    "button #442050 on white": 13.390885672233228,
+    "conservative gradient lower bound": 5.488020529995962
+  },
+  "npmAudit": {
+    "info": 0,
+    "low": 0,
+    "moderate": 0,
+    "high": 0,
+    "critical": 0,
+    "total": 0
+  },
+  "gitleaks": {
+    "version": "8.30.1",
+    "current": 0,
+    "history": 1,
+    "historyFile": ".vscode/uptime.sh",
+    "historyLine": 11,
+    "historicalKeyOriginAndValidity": "unverified"
+  },
+  "validator": {
+    "version": "26.9.30 (996312a)",
+    "htmlErrors": 0,
+    "cssErrors": 0,
+    "htmlWarnings": 2,
+    "warnings": "file-origin CSP warnings, not reproduced on HTTP in browser"
+  },
+  "pending": [
+    "full manual WCAG 2.2 AA",
+    "real TalkBack/NVDA/VoiceOver",
+    "actual browser zoom UI 200%",
+    "historical key handling",
+    "deployed Lighthouse",
+    "CI/CodeQL not configured"
+  ]
+}

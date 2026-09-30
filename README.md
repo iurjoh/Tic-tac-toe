@@ -2,7 +2,7 @@
 
 Jogo para **duas pessoas no mesmo dispositivo**. Não há multiplayer remoto, bot, conta, placar persistente nem backend.
 
-Revisão aprovada em 30/09/2026. O repositório público foi recriado sem o histórico antigo; esta versão está em `main`. Deploy Cloudflare Pages e link de teste aguardam autorização do novo ID do repo no aplicativo Cloudflare. O antigo GitHub Pages pode estar indisponível durante a troca.
+Revisão aprovada em 30/09/2026. O repositório público foi recriado sem o histórico antigo; esta versão está em `main`. Publicado no Cloudflare Pages por Direct Upload em 30/09/2026: https://tic-tac-toe-revival.pages.dev/ . O antigo GitHub Pages foi substituído por esse link de teste. A conexão Git do Pages ficou bloqueada; atualizações não são automáticas e exigem novo Direct Upload.
 
 ## Como jogar
 
@@ -102,6 +102,10 @@ Metas de aceite: Lighthouse Performance >=95, Accessibility/Best Practices/SEO 1
 
 Em 30/09/2026: Lighthouse 13.5.0, três execuções mobile e três desktop, todas **100/100/100/100**. Mediana e pior valor: 100 em cada categoria. URL HTTP local, perfil limpo; não mede Pages publicado. O primeiro teste havia dado SEO 91 porque `connect-src none` bloqueava a consulta local de robots.txt do Lighthouse; `connect-src self` mantém terceiros bloqueados e permite a consulta da própria origem. No Pages por projeto, robots.txt efetivo pertence à raiz do hostname.
 
-Nu Checker 26.9.30: HTML/CSS com zero erros; dois avisos de CSP na leitura `file:` do HTML, enquanto o teste HTTP de navegador carrega CSS/JS sem erros. O parser CSS foi executado no modo `--css`. npm audit: zero vulnerabilidades conhecidas. Gitleaks 8.30.1: árvore atual sem achados, **histórico com um alerta** em `.vscode/uptime.sh:11`, no commit inicial. Não foi verificada origem/validade da chave nem reescrito o histórico. Esse achado pertence ao repositório anterior, preservado em backup privado. O novo histórico não deve conter o template; será escaneado após criação. A validade/origem da chave antiga e sua revogação continuam pendentes.
+Nu Checker 26.9.30: HTML/CSS com zero erros; dois avisos de CSP na leitura `file:` do HTML, enquanto o teste HTTP de navegador carrega CSS/JS sem erros. O parser CSS foi executado no modo `--css`. npm audit: zero vulnerabilidades conhecidas. Gitleaks 8.30.1: árvore atual sem achados, **histórico com um alerta** em `.vscode/uptime.sh:11`, no commit inicial. Não foi verificada origem/validade da chave nem reescrito o histórico. Esse achado pertence ao repositório anterior, preservado em backup privado. O histórico do novo repo foi escaneado com Gitleaks 8.30.1: 17 commits, zero achados. Os backups do repo anterior continuam privados no Drive. A validade/origem da chave antiga e sua revogação continuam pendentes.
 
 Axe deixou `color-contrast` incompleto por não resolver gradiente. Revisão por cálculo: branco tem contraste mínimo conservador >5,48:1 no gradiente; texto do botão >12:1 sobre branco. Pendem WCAG AA completo, TalkBack/VoiceOver/NVDA e zoom UI real. CI/CodeQL não foram configurados. Não se promete A+ de headers/TLS em GitHub Pages. Todos os testes usados foram locais e gratuitos, sem billing.
+
+## Publicação verificada
+
+Em 30/09/2026, a URL pública e o favicon responderam HTTP 200. Partida completa, resultado, foco e reinício conferidos no navegador do site publicado. Houve resposta 522 durante a propagação inicial, seguida de 200. As medições Lighthouse acima continuam sendo locais, não scores deste deploy. Projeto existente no plano gratuito; nenhum upgrade ou cobrança foi iniciado.

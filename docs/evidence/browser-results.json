@@ -1,0 +1,579 @@
+{
+  "date": "2026-09-30",
+  "browser": "154.0.8037.57",
+  "screens": [
+    {
+      "label": "320x568",
+      "width": 320,
+      "height": 568,
+      "scrollWidth": 320,
+      "header": {
+        "x": 12,
+        "y": 12,
+        "width": 296,
+        "height": 82.765625,
+        "bottom": 94.765625
+      },
+      "board": {
+        "x": 16,
+        "y": 297.375,
+        "width": 288,
+        "height": 288,
+        "bottom": 585.375
+      },
+      "status": {
+        "x": 12,
+        "y": 240.59375,
+        "width": 296,
+        "height": 46.390625,
+        "bottom": 286.984375
+      },
+      "restart": {
+        "x": 66.859375,
+        "y": 595.765625,
+        "width": 186.28125,
+        "height": 44,
+        "bottom": 639.765625
+      },
+      "buttons": [
+        "Linha 1, coluna 1, X",
+        "Linha 1, coluna 2, vazia",
+        "Linha 1, coluna 3, vazia",
+        "Linha 2, coluna 1, vazia",
+        "Linha 2, coluna 2, O",
+        "Linha 2, coluna 3, vazia",
+        "Linha 3, coluna 1, vazia",
+        "Linha 3, coluna 2, vazia",
+        "Linha 3, coluna 3, vazia"
+      ]
+    },
+    {
+      "label": "844x390",
+      "width": 844,
+      "height": 390,
+      "scrollWidth": 844,
+      "header": {
+        "x": 102,
+        "y": 24,
+        "width": 640,
+        "height": 81.578125,
+        "bottom": 105.578125
+      },
+      "board": {
+        "x": 272,
+        "y": 261.8125,
+        "width": 300,
+        "height": 300,
+        "bottom": 561.8125
+      },
+      "status": {
+        "x": 248.421875,
+        "y": 205.03125,
+        "width": 347.140625,
+        "height": 46.390625,
+        "bottom": 251.421875
+      },
+      "restart": {
+        "x": 328.859375,
+        "y": 572.203125,
+        "width": 186.28125,
+        "height": 44,
+        "bottom": 616.203125
+      },
+      "buttons": [
+        "Linha 1, coluna 1, X",
+        "Linha 1, coluna 2, vazia",
+        "Linha 1, coluna 3, vazia",
+        "Linha 2, coluna 1, vazia",
+        "Linha 2, coluna 2, O",
+        "Linha 2, coluna 3, vazia",
+        "Linha 3, coluna 1, vazia",
+        "Linha 3, coluna 2, vazia",
+        "Linha 3, coluna 3, vazia"
+      ]
+    },
+    {
+      "label": "390x844",
+      "width": 390,
+      "height": 844,
+      "scrollWidth": 390,
+      "header": {
+        "x": 12,
+        "y": 12,
+        "width": 366,
+        "height": 82.765625,
+        "bottom": 94.765625
+      },
+      "board": {
+        "x": 45,
+        "y": 274.1875,
+        "width": 300,
+        "height": 300,
+        "bottom": 574.1875
+      },
+      "status": {
+        "x": 21.421875,
+        "y": 217.40625,
+        "width": 347.140625,
+        "height": 46.390625,
+        "bottom": 263.796875
+      },
+      "restart": {
+        "x": 101.859375,
+        "y": 584.578125,
+        "width": 186.28125,
+        "height": 44,
+        "bottom": 628.578125
+      },
+      "buttons": [
+        "Linha 1, coluna 1, X",
+        "Linha 1, coluna 2, vazia",
+        "Linha 1, coluna 3, vazia",
+        "Linha 2, coluna 1, vazia",
+        "Linha 2, coluna 2, O",
+        "Linha 2, coluna 3, vazia",
+        "Linha 3, coluna 1, vazia",
+        "Linha 3, coluna 2, vazia",
+        "Linha 3, coluna 3, vazia"
+      ]
+    },
+    {
+      "label": "1440x900",
+      "width": 1440,
+      "height": 900,
+      "scrollWidth": 1440,
+      "header": {
+        "x": 400,
+        "y": 24,
+        "width": 640,
+        "height": 81.578125,
+        "bottom": 105.578125
+      },
+      "board": {
+        "x": 570,
+        "y": 261.8125,
+        "width": 300,
+        "height": 300,
+        "bottom": 561.8125
+      },
+      "status": {
+        "x": 546.421875,
+        "y": 205.03125,
+        "width": 347.140625,
+        "height": 46.390625,
+        "bottom": 251.421875
+      },
+      "restart": {
+        "x": 626.859375,
+        "y": 572.203125,
+        "width": 186.28125,
+        "height": 44,
+        "bottom": 616.203125
+      },
+      "buttons": [
+        "Linha 1, coluna 1, X",
+        "Linha 1, coluna 2, vazia",
+        "Linha 1, coluna 3, vazia",
+        "Linha 2, coluna 1, vazia",
+        "Linha 2, coluna 2, O",
+        "Linha 2, coluna 3, vazia",
+        "Linha 3, coluna 1, vazia",
+        "Linha 3, coluna 2, vazia",
+        "Linha 3, coluna 3, vazia"
+      ]
+    },
+    {
+      "label": "280x568",
+      "width": 280,
+      "height": 568,
+      "scrollWidth": 280,
+      "header": {
+        "x": 12,
+        "y": 12,
+        "width": 256,
+        "height": 82.765625,
+        "bottom": 94.765625
+      },
+      "board": {
+        "x": 14,
+        "y": 297.375,
+        "width": 252,
+        "height": 252,
+        "bottom": 549.375
+      },
+      "status": {
+        "x": 12,
+        "y": 240.59375,
+        "width": 256,
+        "height": 46.390625,
+        "bottom": 286.984375
+      },
+      "restart": {
+        "x": 46.859375,
+        "y": 559.765625,
+        "width": 186.28125,
+        "height": 44,
+        "bottom": 603.765625
+      },
+      "buttons": [
+        "Linha 1, coluna 1, X",
+        "Linha 1, coluna 2, vazia",
+        "Linha 1, coluna 3, vazia",
+        "Linha 2, coluna 1, vazia",
+        "Linha 2, coluna 2, O",
+        "Linha 2, coluna 3, vazia",
+        "Linha 3, coluna 1, vazia",
+        "Linha 3, coluna 2, vazia",
+        "Linha 3, coluna 3, vazia"
+      ]
+    },
+    {
+      "label": "200% reflow equivalent: 640x1136 physical / 320x568 CSS",
+      "width": 320,
+      "height": 568,
+      "scrollWidth": 320,
+      "header": {
+        "x": 12,
+        "y": 12,
+        "width": 296,
+        "height": 82.765625,
+        "bottom": 94.765625
+      },
+      "board": {
+        "x": 16,
+        "y": 297.375,
+        "width": 288,
+        "height": 288,
+        "bottom": 585.375
+      },
+      "status": {
+        "x": 118.234375,
+        "y": 240.59375,
+        "width": 83.53125,
+        "height": 46.390625,
+        "bottom": 286.984375
+      },
+      "restart": {
+        "x": 66.859375,
+        "y": 595.765625,
+        "width": 186.28125,
+        "height": 44,
+        "bottom": 639.765625
+      },
+      "buttons": [
+        "Linha 1, coluna 1, vazia",
+        "Linha 1, coluna 2, vazia",
+        "Linha 1, coluna 3, vazia",
+        "Linha 2, coluna 1, vazia",
+        "Linha 2, coluna 2, vazia",
+        "Linha 2, coluna 3, vazia",
+        "Linha 3, coluna 1, vazia",
+        "Linha 3, coluna 2, vazia",
+        "Linha 3, coluna 3, vazia"
+      ]
+    }
+  ],
+  "keyboard": [
+    {
+      "step": 1,
+      "index": 0,
+      "status": "X jogou na linha 1, coluna 1. Vez de O.",
+      "focus": "<button type=\"button\" class=\"cell x\" data-cell=\"\" data-index=\"0\" aria-label=\"Linha 1, coluna 1, X\" aria-disabled=\"true\"></button>"
+    },
+    {
+      "step": 2,
+      "index": 3,
+      "status": "O jogou na linha 2, coluna 1. Vez de X.",
+      "focus": "<button type=\"button\" class=\"cell circle\" data-cell=\"\" data-index=\"3\" aria-label=\"Linha 2, coluna 1, O\" aria-disabled=\"true\"></button>"
+    },
+    {
+      "step": 3,
+      "index": 1,
+      "status": "X jogou na linha 1, coluna 2. Vez de O.",
+      "focus": "<button type=\"button\" class=\"cell x\" data-cell=\"\" data-index=\"1\" aria-label=\"Linha 1, coluna 2, X\" aria-disabled=\"true\"></button>"
+    },
+    {
+      "step": 4,
+      "index": 4,
+      "status": "O jogou na linha 2, coluna 2. Vez de X.",
+      "focus": "<button type=\"button\" class=\"cell circle\" data-cell=\"\" data-index=\"4\" aria-label=\"Linha 2, coluna 2, O\" aria-disabled=\"true\"></button>"
+    },
+    {
+      "step": 5,
+      "index": 2,
+      "status": "X jogou na linha 1, coluna 3. X venceu! Partida encerrada.",
+      "focus": "<button type=\"button\" class=\"action-button\" data-restart=\"\">Jogar novamente</button>"
+    },
+    {
+      "action": "restart",
+      "status": "Nova partida. Vez de X.",
+      "focus": "cell 0"
+    },
+    {
+      "action": "active restart confirmation, Escape cancellation and confirmed restart",
+      "passed": true
+    },
+    {
+      "action": "O venceu!",
+      "passed": true
+    },
+    {
+      "action": "Empate!",
+      "passed": true
+    }
+  ],
+  "network": [
+    "http://127.0.0.1:8124/",
+    "http://127.0.0.1:8124/assets/css/style.css",
+    "http://127.0.0.1:8124/assets/js/script.js",
+    "http://127.0.0.1:8124/assets/js/engine.js",
+    "http://127.0.0.1:8124/assets/images/favicon.svg"
+  ],
+  "axe": [
+    {
+      "size": "320x568",
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "impact": "serious",
+          "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+          "nodes": [
+            {
+              "html": "<h1>Tic-Tac-Toe</h1>",
+              "target": [
+                "h1"
+              ],
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+            },
+            {
+              "html": "<p>Jogo da velha para duas pessoas no mesmo dispositivo.</p>",
+              "target": [
+                "header > p"
+              ],
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+            },
+            {
+              "html": "<p id=\"instructions\" class=\"instructions\">Complete uma linha, coluna ou diagonal. Use Tab e Shift+Tab para escolher uma casa e Enter ou Espaço para jogar.</p>",
+              "target": [
+                "#instructions"
+              ],
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+            },
+            {
+              "html": "<p class=\"legend\">X = cruz · O = anel · X começa</p>",
+              "target": [
+                ".legend"
+              ],
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+            },
+            {
+              "html": "<p class=\"status\" data-status=\"\" role=\"status\" aria-live=\"polite\" aria-atomic=\"true\">O jogou na linha 2, coluna 2. Vez de X.</p>",
+              "target": [
+                ".status"
+              ],
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "size": "844x390",
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "impact": "serious",
+          "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+          "nodes": [
+            {
+              "html": "<h1>Tic-Tac-Toe</h1>",
+              "target": [
+                "h1"
+              ],
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+            },
+            {
+              "html": "<p>Jogo da velha para duas pessoas no mesmo dispositivo.</p>",
+              "target": [
+                "header > p"
+              ],
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+            },
+            {
+              "html": "<p id=\"instructions\" class=\"instructions\">Complete uma linha, coluna ou diagonal. Use Tab e Shift+Tab para escolher uma casa e Enter ou Espaço para jogar.</p>",
+              "target": [
+                "#instructions"
+              ],
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+            },
+            {
+              "html": "<p class=\"legend\">X = cruz · O = anel · X começa</p>",
+              "target": [
+                ".legend"
+              ],
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+            },
+            {
+              "html": "<p class=\"status\" data-status=\"\" role=\"status\" aria-live=\"polite\" aria-atomic=\"true\">O jogou na linha 2, coluna 2. Vez de X.</p>",
+              "target": [
+                ".status"
+              ],
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "size": "390x844",
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "impact": "serious",
+          "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+          "nodes": [
+            {
+              "html": "<h1>Tic-Tac-Toe</h1>",
+              "target": [
+                "h1"
+              ],
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+            },
+            {
+              "html": "<p>Jogo da velha para duas pessoas no mesmo dispositivo.</p>",
+              "target": [
+                "header > p"
+              ],
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+            },
+            {
+              "html": "<p id=\"instructions\" class=\"instructions\">Complete uma linha, coluna ou diagonal. Use Tab e Shift+Tab para escolher uma casa e Enter ou Espaço para jogar.</p>",
+              "target": [
+                "#instructions"
+              ],
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+            },
+            {
+              "html": "<p class=\"legend\">X = cruz · O = anel · X começa</p>",
+              "target": [
+                ".legend"
+              ],
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+            },
+            {
+              "html": "<p class=\"status\" data-status=\"\" role=\"status\" aria-live=\"polite\" aria-atomic=\"true\">O jogou na linha 2, coluna 2. Vez de X.</p>",
+              "target": [
+                ".status"
+              ],
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "size": "1440x900",
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "impact": "serious",
+          "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+          "nodes": [
+            {
+              "html": "<h1>Tic-Tac-Toe</h1>",
+              "target": [
+                "h1"
+              ],
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+            },
+            {
+              "html": "<p>Jogo da velha para duas pessoas no mesmo dispositivo.</p>",
+              "target": [
+                "header > p"
+              ],
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+            },
+            {
+              "html": "<p id=\"instructions\" class=\"instructions\">Complete uma linha, coluna ou diagonal. Use Tab e Shift+Tab para escolher uma casa e Enter ou Espaço para jogar.</p>",
+              "target": [
+                "#instructions"
+              ],
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+            },
+            {
+              "html": "<p class=\"legend\">X = cruz · O = anel · X começa</p>",
+              "target": [
+                ".legend"
+              ],
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+            },
+            {
+              "html": "<p class=\"status\" data-status=\"\" role=\"status\" aria-live=\"polite\" aria-atomic=\"true\">O jogou na linha 2, coluna 2. Vez de X.</p>",
+              "target": [
+                ".status"
+              ],
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "size": "280x568",
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "impact": "serious",
+          "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+          "nodes": [
+            {
+              "html": "<h1>Tic-Tac-Toe</h1>",
+              "target": [
+                "h1"
+              ],
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+            },
+            {
+              "html": "<p>Jogo da velha para duas pessoas no mesmo dispositivo.</p>",
+              "target": [
+                "header > p"
+              ],
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+            },
+            {
+              "html": "<p id=\"instructions\" class=\"instructions\">Complete uma linha, coluna ou diagonal. Use Tab e Shift+Tab para escolher uma casa e Enter ou Espaço para jogar.</p>",
+              "target": [
+                "#instructions"
+              ],
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+            },
+            {
+              "html": "<p class=\"legend\">X = cruz · O = anel · X começa</p>",
+              "target": [
+                ".legend"
+              ],
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+            },
+            {
+              "html": "<p class=\"status\" data-status=\"\" role=\"status\" aria-live=\"polite\" aria-atomic=\"true\">O jogou na linha 2, coluna 2. Vez de X.</p>",
+              "target": [
+                ".status"
+              ],
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "size": "restart dialog",
+      "violations": []
+    }
+  ],
+  "accessibilityTree": "- banner:\n  - heading \"Tic-Tac-Toe\" [level=1]\n  - paragraph: Jogo da velha para duas pessoas no mesmo dispositivo.\n- main:\n  - paragraph: Complete uma linha, coluna ou diagonal. Use Tab e Shift+Tab para escolher uma casa e Enter ou Espaço para jogar.\n  - paragraph: X = cruz · O = anel · X começa\n  - status: Nova partida. Vez de X.\n  - group \"Tabuleiro de jogo da velha\":\n    - button \"Linha 1, coluna 1, vazia\"\n    - button \"Linha 1, coluna 2, vazia\"\n    - button \"Linha 1, coluna 3, vazia\"\n    - button \"Linha 2, coluna 1, vazia\"\n    - button \"Linha 2, coluna 2, vazia\"\n    - button \"Linha 2, coluna 3, vazia\"\n    - button \"Linha 3, coluna 1, vazia\"\n    - button \"Linha 3, coluna 2, vazia\"\n    - button \"Linha 3, coluna 3, vazia\"\n  - button \"Reiniciar partida\""
+}

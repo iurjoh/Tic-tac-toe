@@ -1,41 +1,43 @@
 # Tic-Tac-Toe / Jogo da velha
 
-Jogo para **duas pessoas no mesmo dispositivo**. Não há multiplayer remoto, bot, conta, placar persistente nem backend.
+[Português (Brasil)](README.pt-BR.md) | **English**
 
-Revisão aprovada em 30/09/2026. O repositório público foi recriado sem o histórico antigo; esta versão está em `main`. Publicado no Cloudflare Pages por Direct Upload em 30/09/2026: https://tic-tac-toe-revival.pages.dev/ . O antigo GitHub Pages foi substituído por esse link de teste. A conexão Git do Pages ficou bloqueada; atualizações não são automáticas e exigem novo Direct Upload.
+A game for **two people on the same device**. There is no remote multiplayer, bot, account, persistent scoreboard or backend.
 
-## Como jogar
+Review approved on 2026-09-30. The public repository was recreated without the old history; this version lives on `main`. Published on Cloudflare Pages via Direct Upload on 2026-09-30: https://tic-tac-toe-revival.pages.dev/ . The old GitHub Pages was replaced by this test link. The Pages Git connection stayed blocked; updates are not automatic and require a new Direct Upload.
 
-- X começa. Os jogadores alternam jogadas, escolhendo uma casa vazia.
-- Vence quem completa uma linha, coluna ou diagonal. Sem vencedor após nove jogadas, há empate.
-- Mouse/toque: selecione uma casa. Teclado: Tab/Shift+Tab percorrem as nove casas e o botão de reinício; Enter ou Espaço fazem a jogada.
-- O turno fica visível durante a partida. X é uma cruz; O é um anel.
-- As casas continuam disponíveis para consulta após uma jogada, mas não podem ser alteradas.
-- Ao terminar, a linha vencedora fica destacada e o foco vai para "Jogar novamente". Reiniciar coloca o foco na primeira casa e X começa.
-- Reiniciar uma partida em andamento pede confirmação. "Continuar jogando" ou Escape cancela; "Sim, reiniciar" descarta as jogadas.
+## How to play
 
-## Acessibilidade
+- X starts. Players alternate turns, choosing an empty cell.
+- Whoever completes a row, column or diagonal wins. With no winner after nine moves, it is a draw.
+- Mouse/touch: select a cell. Keyboard: Tab/Shift+Tab move through the nine cells and the restart button; Enter or Space makes the move.
+- The current turn stays visible during the match. X is a cross; O is a ring.
+- Cells remain available for review after a move but cannot be changed.
+- When the game ends, the winning line is highlighted and focus moves to "Play again". Restarting puts focus on the first cell and X starts.
+- Restarting a match in progress asks for confirmation. "Keep playing" or Escape cancels; "Yes, restart" discards the moves.
 
-Casas são botões nativos, com nomes como "Linha 1, coluna 2, vazia/X/O", `aria-disabled` quando indisponíveis, foco visível e estados independentes da cor. Um `h1`, instruções e `main` organizam o conteúdo. A região `role="status"`, `aria-live="polite"` e `aria-atomic="true"` recebe a jogada, próximo turno e resultado. O resultado não encobre o tabuleiro. A confirmação usa `<dialog>` modal e retorno de foco.
+## Accessibility
 
-Teclado e árvore acessível foram testados em Chromium, mas **não houve teste auditivo com NVDA, VoiceOver ou outro leitor de tela real**. A emissão do texto no live region foi verificada; o anúncio audível em combinações reais de navegador/leitor de tela ainda precisa ser conferido. Axe sem violações não prova conformidade integral.
+Cells are native buttons, with names like "Row 1, column 2, empty/X/O", `aria-disabled` when unavailable, visible focus and states independent of color. One `h1`, instructions and `main` organize the content. The `role="status"` region, `aria-live="polite"` and `aria-atomic="true"` receives the move, next turn and result. The result does not cover the board. Confirmation uses a modal `<dialog>` with focus return.
 
-## Layout e privacidade
+Keyboard and the accessible tree were tested in Chromium, but **there was no listening test with NVDA, VoiceOver or another real screen reader**. The text output in the live region was verified; the audible announcement in real browser/screen-reader combinations still needs to be checked. Axe with no violations does not prove full conformance.
 
-Cabeçalho e conteúdo em fluxo normal, `min-height: 100svh`, tabuleiro proporcional com largura máxima de 300px e limite de 90vw. Em telas curtas, o conteúdo rola verticalmente em vez de sobrepor ou encolher os controles. Largura de 280px sem overflow horizontal foi testada.
+## Layout and privacy
 
-Usa fonte de sistema, arquivos locais e favicon SVG. Não usa Google Fonts nem telemetria. A CSP via meta permite scripts, estilos e imagens apenas da própria origem; bloqueia conexões externas, objetos e envio de formulário. `frame-ancestors` não funciona em CSP via meta e não é anunciado como proteção. Recriar o repo retira o histórico antigo do projeto novo, mas não revoga uma chave antiga nem elimina cópias externas.
+Header and content in normal flow, `min-height: 100svh`, proportional board with a maximum width of 300px and a 90vw limit. On short screens the content scrolls vertically instead of overlapping or shrinking the controls. A 280px width with no horizontal overflow was tested.
 
-## Executar localmente
+It uses a system font, local files and an SVG favicon. No Google Fonts or telemetry. The CSP via meta allows scripts, styles and images only from the same origin; it blocks external connections, objects and form submission. `frame-ancestors` does not work in a meta CSP and is not advertised as protection. Recreating the repo removes the old history from the new project, but does not revoke an old key or eliminate external copies.
 
-Não há build para jogar. Sirva a pasta por HTTP, pois JavaScript usa módulos:
+## Run locally
+
+There is no build to play. Serve the folder over HTTP, because the JavaScript uses modules:
 
 ```sh
 python3 -m http.server 8000
-# Abra http://localhost:8000
+# Open http://localhost:8000
 ```
 
-## Testes
+## Tests
 
 Node 22+:
 
@@ -43,69 +45,69 @@ Node 22+:
 npm test
 ```
 
-Engine sem dependências de DOM: 20 testes, cobrindo X/O nas oito linhas, empate, reinício, posições inválidas/ocupadas e imutabilidade após o fim. Percurso exaustivo de **255.168 partidas legais completas** comparado com verificador independente: 131.184 vitórias X, 77.904 vitórias O e 46.080 empates.
+Engine with no DOM dependencies: 20 tests, covering X/O on all eight lines, draw, restart, invalid/occupied positions and immutability after the end. An exhaustive run of **255,168 complete legal games** compared against an independent checker: 131,184 X wins, 77,904 O wins and 46,080 draws.
 
-Para testes de interface e gravação:
+For interface tests and recording:
 
 ```sh
 npm ci
 npx playwright install chromium ffmpeg
 npm run test:browser
-# Chromium já instalado: CHROME_PATH=/caminho/do/chrome npm run test:browser
+# Chromium already installed: CHROME_PATH=/path/to/chrome npm run test:browser
 ```
 
-Resultados são gerados em `test-results/` (ignorado pelo Git). A suíte usa apenas eventos de teclado para a partida completa e reinício. Relatórios da execução revisada estão em `docs/evidence/`. Capturas e vídeo completos estão no pacote privado de evidências no Drive, listado em `docs/evidence/README.md`; o arquivo fonte ZIP também inclui as capturas.
+Results are generated in `test-results/` (ignored by Git). The suite uses only keyboard events for the full match and restart. Reports from the reviewed run are in `docs/evidence/`. Full captures and video are in the private evidence package on Drive, listed in `docs/evidence/README.md`; the source ZIP archive also includes the captures.
 
-### Matriz de verificação de 30/09/2026
+### Verification matrix of 2026-09-30
 
-| Verificação | Resultado / limite |
+| Check | Result / limit |
 | --- | --- |
-| Engine | 20/20 testes; 255.168 finais equivalentes |
-| Teclado | Vitória X e O, empate, bloqueio pós-fim, reinício e confirmação passam |
-| Live region | Texto da jogada/turno/resultado e árvore acessível conferidos; anúncio auditivo pendente |
-| 320×568, 844×390, 390×844, 1440×900 | Sem sobreposição ou overflow horizontal; rolagem vertical em telas curtas |
-| 280×568 | Sem overflow horizontal; tabuleiro proporcional |
-| Reflow 200% | Viewport CSS de 320×568 equivalente a 640×1136 a 200%; não teste de zoom real do navegador |
-| Axe | Nenhuma violação nos cinco tamanhos e no dialog; contraste em gradiente exigiu revisão manual |
-| Rede | Só recursos da própria origem; zero requisições de fonte externa |
-| Navegadores/dispositivos | Chromium Linux automatizado; Safari/Firefox/mobile físico pendentes |
+| Engine | 20/20 tests; 255,168 equivalent game endings |
+| Keyboard | X and O win, draw, post-end blocking, restart and confirmation pass |
+| Live region | Move/turn/result text and accessible tree checked; audible announcement pending |
+| 320×568, 844×390, 390×844, 1440×900 | No overlap or horizontal overflow; vertical scrolling on short screens |
+| 280×568 | No horizontal overflow; proportional board |
+| 200% reflow | 320×568 CSS viewport equivalent to 640×1136 at 200%; not a real browser zoom test |
+| Axe | No violations at the five sizes and in the dialog; contrast on gradient required manual review |
+| Network | Same-origin resources only; zero external font requests |
+| Browsers/devices | Automated Linux Chromium; Safari/Firefox/physical mobile pending |
 
-## Bugs corrigidos
+## Fixed bugs
 
-- Casas em `div` sem operação por teclado ou nome acessível.
-- Cabeçalho fixo sobre o tabuleiro em telas pequenas.
-- O sólido e preview circular inconsistente.
-- Turno indicado apenas por hover.
-- Jogada extra aceita após vitória e estado armazenado apenas em classes CSS.
-- Resultado enorme em overlay, sem gestão previsível de foco.
-- Reinício indisponível durante a partida.
-- Fonte externa e infraestrutura Gitpod não usada, incluindo script de telemetria.
-- `.github/` ignorada; a regra foi retirada.
-- README confundia jogo local de duas pessoas com recursos que não existem.
+- Cells as `div`s with no keyboard operation or accessible name.
+- Fixed header over the board on small screens.
+- Solid O and circular preview inconsistent.
+- Turn indicated only on hover.
+- Extra move accepted after a win and state stored only in CSS classes.
+- Huge result overlay, without predictable focus management.
+- Restart unavailable during the match.
+- Unused external font and Gitpod infrastructure, including a telemetry script.
+- `.github/` ignored; the rule was removed.
+- The README confused a local two-person game with features that do not exist.
 
-## Arquivos
+## Files
 
-- `assets/js/engine.js`: modelo puro de nove posições, turno, resultado e `gameOver`.
-- `assets/js/script.js`: interface, eventos, anúncios e foco.
-- `tests/engine.test.js`: testes da engine.
-- `scripts/browser-check.cjs`: teclado, layout, rede, Axe e vídeo reproduzíveis.
-- `docs/REPAIR-2026-09-30.md`: registro de mudanças e limites.
-- `docs/evidence/`: índice de evidências privadas e relatórios JSON.
+- `assets/js/engine.js`: pure model of nine positions, turn, result and `gameOver`.
+- `assets/js/script.js`: interface, events, announcements and focus.
+- `tests/engine.test.js`: engine tests.
+- `scripts/browser-check.cjs`: reproducible keyboard, layout, network, Axe and video checks.
+- `docs/REPAIR-2026-09-30.md`: record of changes and limits.
+- `docs/evidence/`: index of private evidence and JSON reports.
 
-## Origem e créditos
+## Origin and credits
 
-Projeto acadêmico de JavaScript e DOM do curso Full Stack do Code Institute, de Iuri Johansson. A identidade de jogo simples e as regras originais foram mantidas. Imagens antigas e backups de main/revival foram preservados na pasta privada do projeto no Drive, não no novo repositório. O favicon desta revisão é um SVG simples criado para o projeto; não foram acrescentadas imagens de terceiros.
+Academic JavaScript and DOM project from the Code Institute Full Stack course, by Iuri Johansson. The simple game identity and the original rules were kept. Old images and main/revival backups were preserved in the project's private Drive folder, not in the new repository. This revision's favicon is a simple SVG created for the project; no third-party images were added.
 
-## Metas de qualidade e medições locais
+## Quality goals and local measurements
 
-Metas de aceite: Lighthouse Performance >=95, Accessibility/Best Practices/SEO 100; WCAG 2.2 AA manual + Axe sem violações; Nu HTML/CSS sem erros; dependências e segredos sem alertas válidos. Não são certificados.
+Acceptance goals: Lighthouse Performance >=95, Accessibility/Best Practices/SEO 100; manual WCAG 2.2 AA + Axe with no violations; Nu HTML/CSS with no errors; dependencies and secrets with no valid alerts. These are not certificates.
 
-Em 30/09/2026: Lighthouse 13.5.0, três execuções mobile e três desktop, todas **100/100/100/100**. Mediana e pior valor: 100 em cada categoria. URL HTTP local, perfil limpo; não mede Pages publicado. O primeiro teste havia dado SEO 91 porque `connect-src none` bloqueava a consulta local de robots.txt do Lighthouse; `connect-src self` mantém terceiros bloqueados e permite a consulta da própria origem. No Pages por projeto, robots.txt efetivo pertence à raiz do hostname.
+On 2026-09-30: Lighthouse 13.5.0, three mobile runs and three desktop runs, all **100/100/100/100**. Median and worst value: 100 in every category. Local HTTP URL, clean profile; does not measure the published Pages deploy. The first test had scored SEO 91 because `connect-src none` blocked Lighthouse's local robots.txt query; `connect-src self` keeps third parties blocked and allows the same-origin query. On per-project Pages, the effective robots.txt belongs to the hostname root.
 
-Nu Checker 26.9.30: HTML/CSS com zero erros; dois avisos de CSP na leitura `file:` do HTML, enquanto o teste HTTP de navegador carrega CSS/JS sem erros. O parser CSS foi executado no modo `--css`. npm audit: zero vulnerabilidades conhecidas. Gitleaks 8.30.1: árvore atual sem achados, **histórico com um alerta** em `.vscode/uptime.sh:11`, no commit inicial. Não foi verificada origem/validade da chave nem reescrito o histórico. Esse achado pertence ao repositório anterior, preservado em backup privado. O histórico do novo repo foi escaneado com Gitleaks 8.30.1: 17 commits, zero achados. Os backups do repo anterior continuam privados no Drive. A validade/origem da chave antiga e sua revogação continuam pendentes.
+Nu Checker 26.9.30: HTML/CSS with zero errors; two CSP warnings when reading the HTML via `file:`, while the browser HTTP test loads CSS/JS with no errors. The CSS parser was run in `--css` mode. npm audit: zero known vulnerabilities. Gitleaks 8.30.1: current tree with no findings, **history with one alert** in `.vscode/uptime.sh:11`, in the initial commit. The key's origin/validity was not verified and the history was not rewritten. That finding belongs to the previous repository, preserved in a private backup. The new repo's history was scanned with Gitleaks 8.30.1: 17 commits, zero findings. The previous repo's backups remain private on Drive. The old key's validity/origin and its revocation remain pending.
 
-Axe deixou `color-contrast` incompleto por não resolver gradiente. Revisão por cálculo: branco tem contraste mínimo conservador >5,48:1 no gradiente; texto do botão >12:1 sobre branco. Pendem WCAG AA completo, TalkBack/VoiceOver/NVDA e zoom UI real. CI/CodeQL não foram configurados. Não se promete A+ de headers/TLS em GitHub Pages. Todos os testes usados foram locais e gratuitos, sem billing.
+Axe left `color-contrast` incomplete because it cannot resolve gradients. Calculation review: white has a conservative minimum contrast >5.48:1 on the gradient; button text >12:1 over white. Full WCAG AA, TalkBack/VoiceOver/NVDA and real UI zoom remain pending. CI/CodeQL were not configured. No A+ headers/TLS grade is promised on GitHub Pages. All tests used were local and free, with no billing.
 
-## Publicação verificada
+## Verified publication
 
-Em 30/09/2026, a URL pública e o favicon responderam HTTP 200. Partida completa, resultado, foco e reinício conferidos no navegador do site publicado. Houve resposta 522 durante a propagação inicial, seguida de 200. As medições Lighthouse acima continuam sendo locais, não scores deste deploy. Projeto existente no plano gratuito; nenhum upgrade ou cobrança foi iniciado.
+On 2026-09-30, the public URL and the favicon answered HTTP 200. A full match, result, focus and restart were checked in the browser on the published site. There was a 522 response during initial propagation, followed by 200. The Lighthouse measurements above remain local, not scores for this deploy. Existing project on the free plan; no upgrade or charge was started.

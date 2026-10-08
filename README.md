@@ -1,10 +1,10 @@
-# Tic-tac-toe - portfolio revival review
+# Tic-tac-toe - accessible two-player game
 
 **English** | [Português (Brasil)](README.pt-BR.md)
 
 A two-player, same-device tic-tac-toe game from the Code Institute JavaScript course. No bot, remote multiplayer, accounts or persistent scoreboard.
 
-Documentation draft, 2026-10-08. Public source; no publication or code change made by this review.
+Public academic project, live demo. README update in a draft PR; no runtime changes or merge in this documentation round.
 
 **Source / Código:** https://github.com/iurjoh/Tic-tac-toe
 
@@ -54,6 +54,10 @@ No account or personal dataset is needed. Preserve local-asset CSP limits and do
 node --test
 python3 -m http.server 8000
 ```
+
+## Release identity
+
+The source reviewed here is on `main`, at the inspected commit above. The live URL opened on 2026-10-08. The historical release record describes Cloudflare Direct Upload, not automatic Git deployment. The exact commit currently served by that host is **unverified**; the source commit above is not a deploy attestation. Before the next release, record source SHA, build/upload date, deployment ID, live smoke result and rollback artifact together.
 
 ## Deployment and roadmap
 

@@ -1,113 +1,81 @@
-# Tic-Tac-Toe / Jogo da velha
+# Tic-tac-toe - accessible two-player game
 
-[Português (Brasil)](README.pt-BR.md) | **English**
+**English** | [Português (Brasil)](README.pt-BR.md)
 
-A game for **two people on the same device**. There is no remote multiplayer, bot, account, persistent scoreboard or backend.
+A two-player, same-device tic-tac-toe game from the Code Institute JavaScript course. No bot, remote multiplayer, accounts or persistent scoreboard.
 
-Review approved on 2026-09-30. The public repository was recreated without the old history; this version lives on `main`. Published on Cloudflare Pages via Direct Upload on 2026-09-30: https://tic-tac-toe-revival.pages.dev/ . The old GitHub Pages was replaced by this test link. The Pages Git connection stayed blocked; updates are not automatic and require a new Direct Upload.
+Public academic project, live demo. README update in a draft PR; no runtime changes or merge in this documentation round.
 
-## How to play
+**Source / Código:** https://github.com/iurjoh/Tic-tac-toe
 
-- X starts. Players alternate turns, choosing an empty cell.
-- Whoever completes a row, column or diagonal wins. With no winner after nine moves, it is a draw.
-- Mouse/touch: select a cell. Keyboard: Tab/Shift+Tab move through the nine cells and the restart button; Enter or Space makes the move.
-- The current turn stays visible during the match. X is a cross; O is a ring.
-- Cells remain available for review after a move but cannot be changed.
-- When the game ends, the winning line is highlighted and focus moves to "Play again". Restarting puts focus on the first cell and X starts.
-- Restarting a match in progress asks for confirmation. "Keep playing" or Escape cancels; "Yes, restart" discards the moves.
+**Inspected commit / Commit inspecionado:** `8f36d4e3a2ef5408ad94a313803d915dac97763b`
 
-## Accessibility
+**Live demo:** https://tic-tac-toe-revival.pages.dev/
 
-Cells are native buttons, with names like "Row 1, column 2, empty/X/O", `aria-disabled` when unavailable, visible focus and states independent of color. One `h1`, instructions and `main` organize the content. The `role="status"` region, `aria-live="polite"` and `aria-atomic="true"` receives the move, next turn and result. The result does not cover the board. Confirmation uses a modal `<dialog>` with focus return.
+Mobile capture prepared on 2026-10-08; repository upload is pending. No image embed is included until the asset exists.
 
-Keyboard and the accessible tree were tested in Chromium, but **there was no listening test with NVDA, VoiceOver or another real screen reader**. The text output in the live region was verified; the audible announcement in real browser/screen-reader combinations still needs to be checked. Axe with no violations does not prove full conformance.
+390x844, 2026-10-08. New capture supplied in this review package; upload together with the README.
 
-## Layout and privacy
+## Idea and planning
 
-Header and content in normal flow, `min-height: 100svh`, proportional board with a maximum width of 300px and a 90vw limit. On short screens the content scrolls vertically instead of overlapping or shrinking the controls. A 280px width with no horizontal overflow was tested.
+Keep simple game rules while making state and keyboard operation predictable. The revival record fixes the original CSS-driven state, inaccessible cells, result overlay and restart behavior.
 
-It uses a system font, local files and an SVG favicon. No Google Fonts or telemetry. The CSP via meta allows scripts, styles and images only from the same origin; it blocks external connections, objects and form submission. `frame-ancestors` does not work in a meta CSP and is not advertised as protection. Recreating the repo removes the old history from the new project, but does not revoke an old key or eliminate external copies.
+## Features and limits
+
+X/O turns, wins/draws, guarded cells, result feedback and restart confirmation. No unsupported features are implied.
+
+## Architecture
+
+Pure JavaScript engine in assets/js/engine.js; DOM layer in assets/js/script.js; local HTML/CSS and SVG favicon. Node test runner validates the model; browser-check script handles a separate UI suite.
+
+## Design and screenshots
+
+Gradient background, native button cells, visible focus and color-independent X/O marks. Modal restart and live status are documented; full screen-reader listening tests remain pending.
+
+## Build history
+
+Academic DOM game; September 2026 repair separates model/UI and adds guards, accessibility and tests. Repo recreated; do not pretend old commit history is still present. The October 1 commit adds Portuguese documentation.
+
+## Performance
+
+Previous README records local Lighthouse 100s on 2026-09-30. Not rerun here and not a current production certificate. Runtime uses local assets without a build step.
+
+## Security and privacy
+
+No account or personal dataset is needed. Preserve local-asset CSP limits and do not call meta frame-ancestors protection. Historical telemetry findings are not proof of present key validity or revocation.
+
+## Testing evidence
+
+2026-10-08: node --test passed 20/20, including all 255168 complete legal game paths against an independent oracle. Live first move updated X/O state; mobile initial layout visually inspected. Full match/restart, UI suite, screen reader and fresh benchmark were not rerun.
 
 ## Run locally
 
-There is no build to play. Serve the folder over HTTP, because the JavaScript uses modules:
-
 ```sh
+node --test
 python3 -m http.server 8000
-# Open http://localhost:8000
 ```
 
-## Tests
+## Release identity
 
-Node 22+:
+The source reviewed here is on `main`, at the inspected commit above. The live URL opened on 2026-10-08. The historical release record describes Cloudflare Direct Upload, not automatic Git deployment. The exact commit currently served by that host is **unverified**; the source commit above is not a deploy attestation. Before the next release, record source SHA, build/upload date, deployment ID, live smoke result and rollback artifact together.
 
-```sh
-npm test
-```
+## Deployment and roadmap
 
-Engine with no DOM dependencies: 20 tests, covering X/O on all eight lines, draw, restart, invalid/occupied positions and immutability after the end. An exhaustive run of **255,168 complete legal games** compared against an independent checker: 131,184 X wins, 77,904 O wins and 46,080 draws.
+Recheck complete live game and restart modal; keyboard/screen-reader tests; tablet/desktop screenshots; fresh audits; verify deployment update path, since historical Direct Upload is not automatic Git sync.
 
-For interface tests and recording:
+No hosting account/cost settings or deployment branch were changed or freshly verified. Reachable pages do not prove source/deployment parity.
 
-```sh
-npm ci
-npx playwright install chromium ffmpeg
-npm run test:browser
-# Chromium already installed: CHROME_PATH=/path/to/chrome npm run test:browser
-```
+## Credits and license
 
-Results are generated in `test-results/` (ignored by Git). The suite uses only keyboard events for the full match and restart. Reports from the reviewed run are in `docs/evidence/`. Full captures and video are in the private evidence package on Drive, listed in `docs/evidence/README.md`; the source ZIP archive also includes the captures.
+Code Institute JavaScript/DOM academic project. Local SVG favicon and retained original game identity.
 
-### Verification matrix of 2026-09-30
+No root LICENSE exists in the inspected checkout. Do not advertise MIT until original-code rights and third-party terms are checked and a license is approved. No license changed.
 
-| Check | Result / limit |
-| --- | --- |
-| Engine | 20/20 tests; 255,168 equivalent game endings |
-| Keyboard | X and O win, draw, post-end blocking, restart and confirmation pass |
-| Live region | Move/turn/result text and accessible tree checked; audible announcement pending |
-| 320×568, 844×390, 390×844, 1440×900 | No overlap or horizontal overflow; vertical scrolling on short screens |
-| 280×568 | No horizontal overflow; proportional board |
-| 200% reflow | 320×568 CSS viewport equivalent to 640×1136 at 200%; not a real browser zoom test |
-| Axe | No violations at the five sizes and in the dialog; contrast on gradient required manual review |
-| Network | Same-origin resources only; zero external font requests |
-| Browsers/devices | Automated Linux Chromium; Safari/Firefox/physical mobile pending |
 
-## Fixed bugs
+## Retained original attributions
 
-- Cells as `div`s with no keyboard operation or accessible name.
-- Fixed header over the board on small screens.
-- Solid O and circular preview inconsistent.
-- Turn indicated only on hover.
-- Extra move accepted after a win and state stored only in CSS classes.
-- Huge result overlay, without predictable focus management.
-- Restart unavailable during the match.
-- Unused external font and Gitpod infrastructure, including a telemetry script.
-- `.github/` ignored; the rule was removed.
-- The README confused a local two-person game with features that do not exist.
-
-## Files
-
-- `assets/js/engine.js`: pure model of nine positions, turn, result and `gameOver`.
-- `assets/js/script.js`: interface, events, announcements and focus.
-- `tests/engine.test.js`: engine tests.
-- `scripts/browser-check.cjs`: reproducible keyboard, layout, network, Axe and video checks.
-- `docs/REPAIR-2026-09-30.md`: record of changes and limits.
-- `docs/evidence/`: index of private evidence and JSON reports.
-
-## Origin and credits
+### Origin and credits
 
 Academic JavaScript and DOM project from the Code Institute Full Stack course, by Iuri Johansson. The simple game identity and the original rules were kept. Old images and main/revival backups were preserved in the project's private Drive folder, not in the new repository. This revision's favicon is a simple SVG created for the project; no third-party images were added.
 
-## Quality goals and local measurements
-
-Acceptance goals: Lighthouse Performance >=95, Accessibility/Best Practices/SEO 100; manual WCAG 2.2 AA + Axe with no violations; Nu HTML/CSS with no errors; dependencies and secrets with no valid alerts. These are not certificates.
-
-On 2026-09-30: Lighthouse 13.5.0, three mobile runs and three desktop runs, all **100/100/100/100**. Median and worst value: 100 in every category. Local HTTP URL, clean profile; does not measure the published Pages deploy. The first test had scored SEO 91 because `connect-src none` blocked Lighthouse's local robots.txt query; `connect-src self` keeps third parties blocked and allows the same-origin query. On per-project Pages, the effective robots.txt belongs to the hostname root.
-
-Nu Checker 26.9.30: HTML/CSS with zero errors; two CSP warnings when reading the HTML via `file:`, while the browser HTTP test loads CSS/JS with no errors. The CSS parser was run in `--css` mode. npm audit: zero known vulnerabilities. Gitleaks 8.30.1: current tree with no findings, **history with one alert** in `.vscode/uptime.sh:11`, in the initial commit. The key's origin/validity was not verified and the history was not rewritten. That finding belongs to the previous repository, preserved in a private backup. The new repo's history was scanned with Gitleaks 8.30.1: 17 commits, zero findings. The previous repo's backups remain private on Drive. The old key's validity/origin and its revocation remain pending.
-
-Axe left `color-contrast` incomplete because it cannot resolve gradients. Calculation review: white has a conservative minimum contrast >5.48:1 on the gradient; button text >12:1 over white. Full WCAG AA, TalkBack/VoiceOver/NVDA and real UI zoom remain pending. CI/CodeQL were not configured. No A+ headers/TLS grade is promised on GitHub Pages. All tests used were local and free, with no billing.
-
-## Verified publication
-
-On 2026-09-30, the public URL and the favicon answered HTTP 200. A full match, result, focus and restart were checked in the browser on the published site. There was a 522 response during initial propagation, followed by 200. The Lighthouse measurements above remain local, not scores for this deploy. Existing project on the free plan; no upgrade or charge was started.
+### Quality goals and local measurements

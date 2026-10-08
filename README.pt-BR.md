@@ -4,7 +4,7 @@
 
 Jogo da velha para duas pessoas no mesmo aparelho, do curso JavaScript do Code Institute. Sem bot, multiplayer remoto, conta ou placar persistente.
 
-Projeto acadêmico público com demo ao vivo. Atualização de README em PR draft; sem mudança de runtime nem merge nesta rodada.
+Projeto acadêmico público com demo ao vivo.
 
 **Source / Código:** https://github.com/iurjoh/Tic-tac-toe
 
@@ -14,7 +14,7 @@ Projeto acadêmico público com demo ao vivo. Atualização de README em PR draf
 
 Captura mobile preparada em 08/10/2026; upload no repositório pendente. Sem imagem embutida até o asset existir.
 
-390x844, 2026-10-08. Captura nova no pacote; enviar junto com o README.
+Captura mobile: 390x844, 08/10/2026. Upload no repositório ainda pendente.
 
 ## Ideia e planejamento
 

@@ -2,6 +2,14 @@
 
 **English** | [Português (Brasil)](README.pt-BR.md)
 
+[![Open demo](https://img.shields.io/badge/demo-live-2ea44f)](https://tic-tac-toe-revival.pages.dev/)
+
+## Demo
+
+[Open demo](https://tic-tac-toe-revival.pages.dev/)
+
+Open in your browser. No installation or terminal required.
+
 A two-player, same-device tic-tac-toe game from the Code Institute JavaScript course. No bot, remote multiplayer, accounts or persistent scoreboard.
 
 Public academic project with a live demo.

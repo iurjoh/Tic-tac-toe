@@ -2,6 +2,14 @@
 
 **Português (Brasil)** | [English](README.md)
 
+[![Abrir demo](https://img.shields.io/badge/demo-live-2ea44f)](https://tic-tac-toe-revival.pages.dev/)
+
+## Demo
+
+[Abrir demo](https://tic-tac-toe-revival.pages.dev/)
+
+Abra no navegador, sem instalar nada ou usar o terminal.
+
 Jogo da velha para duas pessoas no mesmo aparelho, do curso JavaScript do Code Institute. Sem bot, multiplayer remoto, conta ou placar persistente.
 
 Projeto acadêmico público com demo ao vivo.

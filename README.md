@@ -2,23 +2,17 @@
 
 **English** | [Português (Brasil)](README.pt-BR.md)
 
-[![Open demo](https://img.shields.io/badge/demo-live-2ea44f)](https://tic-tac-toe-revival.pages.dev/)
-
 ## Demo
 
-[Open demo](https://tic-tac-toe-revival.pages.dev/)
+[![Open demo](https://img.shields.io/badge/demo-live-2ea44f)](https://tic-tac-toe-revival.pages.dev/)
 
 Open in your browser. No installation or terminal required.
 
 A two-player, same-device tic-tac-toe game from the Code Institute JavaScript course. No bot, remote multiplayer, accounts or persistent scoreboard.
 
-Public academic project with a live demo.
-
 **Source / Código:** https://github.com/iurjoh/Tic-tac-toe
 
 **Inspected commit / Commit inspecionado:** `8f36d4e3a2ef5408ad94a313803d915dac97763b`
-
-**Live demo:** https://tic-tac-toe-revival.pages.dev/
 
 Mobile capture prepared on 2026-10-08; repository upload is pending. No image embed is included until the asset exists.
 
@@ -78,7 +72,6 @@ No hosting account/cost settings or deployment branch were changed or freshly ve
 Code Institute JavaScript/DOM academic project. Local SVG favicon and retained original game identity.
 
 No root LICENSE exists in the inspected checkout. Do not advertise MIT until original-code rights and third-party terms are checked and a license is approved. No license changed.
-
 
 ## Retained original attributions
 

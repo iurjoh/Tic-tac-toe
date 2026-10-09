@@ -2,23 +2,17 @@
 
 **Português (Brasil)** | [English](README.md)
 
-[![Abrir demo](https://img.shields.io/badge/demo-live-2ea44f)](https://tic-tac-toe-revival.pages.dev/)
-
 ## Demo
 
-[Abrir demo](https://tic-tac-toe-revival.pages.dev/)
+[![Abrir demo](https://img.shields.io/badge/demo-live-2ea44f)](https://tic-tac-toe-revival.pages.dev/)
 
 Abra no navegador, sem instalar nada ou usar o terminal.
 
 Jogo da velha para duas pessoas no mesmo aparelho, do curso JavaScript do Code Institute. Sem bot, multiplayer remoto, conta ou placar persistente.
 
-Projeto acadêmico público com demo ao vivo.
-
 **Source / Código:** https://github.com/iurjoh/Tic-tac-toe
 
 **Inspected commit / Commit inspecionado:** `8f36d4e3a2ef5408ad94a313803d915dac97763b`
-
-**Live demo:** https://tic-tac-toe-revival.pages.dev/
 
 Captura mobile preparada em 08/10/2026; upload no repositório pendente. Sem imagem embutida até o asset existir.
 
@@ -78,7 +72,6 @@ Nenhuma configuração de host/custo/branch alterada ou reconferida. Página ace
 Projeto acadêmico JavaScript/DOM Code Institute. Favicon SVG local e identidade original preservada.
 
 Sem LICENSE na raiz inspecionada. Não anunciar MIT antes de conferir direitos autorais/terceiros e aprovar licença. Nenhuma licença alterada.
-
 
 ## Atribuições originais preservadas
 

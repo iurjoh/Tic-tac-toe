@@ -80,3 +80,16 @@ No root LICENSE exists in the inspected checkout. Do not advertise MIT until ori
 Academic JavaScript and DOM project from the Code Institute Full Stack course, by Iuri Johansson. The simple game identity and the original rules were kept. Old images and main/revival backups were preserved in the project's private Drive folder, not in the new repository. This revision's favicon is a simple SVG created for the project; no third-party images were added.
 
 ### Quality goals and local measurements
+
+## Technology and effort snapshot
+
+Captured from repository sources on 2026-10-14. This is a source snapshot, not a claim about production versions or the technology available at the original launch.
+
+- **Stack at this snapshot:** HTML, CSS and native JavaScript; no browser runtime framework. package.json declares Node >=22 for development/test commands, not as a browser requirement.
+- **Earlier record:** The repository was recreated for the 2026 revival; original academic commit history is not present.
+- **Observed calendar window:** 2026-09-30 to 2026-10-09: surviving commits reachable from main. Calendar span, not continuous work or time to launch.
+- **Pull requests:** 2 visible PRs: 0 open, 2 closed, captured 2026-10-14 before this documentation change. Closed does not mean merged. Deleted/recreated history is excluded.
+- **Decision and reason:** Separating game rules from the DOM makes legal game paths testable while keeping keyboard and screen-reader controls in the UI.
+- **Estimated active effort:** unavailable. No reliable time log or bounded work-session reconstruction was established. Commit count and elapsed calendar time are not converted into hours.
+
+Evidence: current dependency/source files named above, retained Git history and the repository PR list. Versions and counts are fixed to this snapshot, not live counters.

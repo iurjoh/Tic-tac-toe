@@ -80,3 +80,16 @@ Sem LICENSE na raiz inspecionada. Não anunciar MIT antes de conferir direitos a
 Academic JavaScript and DOM project from the Code Institute Full Stack course, by Iuri Johansson. The simple game identity and the original rules were kept. Old images and main/revival backups were preserved in the project's private Drive folder, not in the new repository. This revision's favicon is a simple SVG created for the project; no third-party images were added.
 
 ### Quality goals and local measurements
+
+## Retrato da tecnologia e do esforço
+
+Registro das fontes do repositório em 2026-10-14. É um retrato do código, não uma afirmação sobre versões em produção nem sobre a tecnologia disponível no lançamento original.
+
+- **Stack neste registro:** HTML, CSS e JavaScript nativo, sem framework no navegador. package.json declara Node >=22 para desenvolvimento/testes, não como requisito do navegador.
+- **Registro anterior:** O repositório foi recriado na retomada de 2026; o histórico original de commits acadêmicos não está presente.
+- **Janela de calendário observada:** 2026-09-30 a 2026-10-09: commits preservados e alcançáveis em main. Intervalo de calendário, não trabalho contínuo nem prazo até o lançamento.
+- **Pull requests:** 2 PRs visíveis: 0 abertos, 2 fechados, consultados em 2026-10-14 antes desta alteração. Fechado não significa mergeado. Histórico apagado/recriado não entra na contagem.
+- **Decisão e motivo:** Separar as regras do DOM permite testar caminhos legais do jogo e manter controles de teclado e leitor de tela na interface.
+- **Estimativa de esforço ativo:** indisponível. Não foi estabelecido um registro confiável de tempo nem uma reconstrução delimitada das sessões de trabalho. Contagem de commits e tempo de calendário não são convertidos em horas.
+
+Evidências: arquivos de dependências/código citados acima, histórico Git preservado e lista de PRs do repositório. Versões e contagens pertencem a este registro, não são contadores ao vivo.
